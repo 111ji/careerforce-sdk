@@ -72,11 +72,9 @@ function wx_share() {
 }
 
 //公共方法
-// wx_share.prototype = {
-
-// };
 wx_share.prototype.setHttpClient = function(hClient) {
     this._httpClient = hClient;
 };
 
 module.exports = wx_share;
+

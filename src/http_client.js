@@ -157,8 +157,8 @@ HttpClient.prototype.request = function(url, method, params) {
             headers.userAccessToken = userToken.access_token;
     } catch (e) {}
 
-    console.log(url);
-    console.log(this.tokenUtil.config.AUTH_SERVER);
+    // console.log(url);
+    // console.log(this.tokenUtil.config.AUTH_SERVER);
     if (url == this.tokenUtil.config.AUTH_SERVER) {
         // console.log("AUTHEN_CODE: " + this.tokenUtil.config.AUTHEN_CODE)
         headers.Authorization = "Basic " + this.tokenUtil.config.AUTHEN_CODE;
